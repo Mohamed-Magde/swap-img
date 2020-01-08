@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  background-color: rgb(24, 160, 251);
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 3em;
+  display: flex;
+
+  color: #fff;
+  position: absolute;
+  z-index: 0;
+
+  ul {
+    margin: 4em;
+  }
+}
+figure {
+  transition: all 0.5s;
+}
+
+.cover {
+  height: 35vh;
+  object-fit: cover;
+  width: 100vw;
+  display: block;
+  transition: all 0.5s;
+  z-index: 5;
+  position: relative;
+}
+
+.open {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  padding: 0.4em 0.8em;
+  border-radius: 20px;
+  font-size: 2em;
+  border: none;
+  background-color: rgba(#fff, 0.5);
+  cursor: pointer;
+  transition: all 0.5s;
+  z-index: 66;
+
+  &:hover {
+    background-color: rgb(24, 160, 251);
+    color: #fff;
+  }
+}
+
+.close {
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}

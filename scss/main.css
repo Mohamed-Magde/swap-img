@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  background-color: #18a0fb;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  position: absolute;
+  z-index: 0;
+}
+
+.container ul {
+  margin: 4em;
+}
+
+figure {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cover {
+  height: 35vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  display: block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 5;
+  position: relative;
+}
+
+.open {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  padding: 0.4em 0.8em;
+  border-radius: 20px;
+  font-size: 2em;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 66;
+}
+
+.open:hover {
+  background-color: #18a0fb;
+  color: #fff;
+}
+
+.close {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/*# sourceMappingURL=main.css.map */
